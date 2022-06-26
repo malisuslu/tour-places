@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the card component.
+// -----------------------------------------------------------------------------
+@import '../abstracts/variables', '../abstracts/functions', '../abstracts/mixins', '../abstracts/reset';
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 1rem;
+    padding: 1rem;
+    width: 30vw;
+    height: 30vw;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 450px;
+    max-height: 450px;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+        h2 {
+            font-size: min(calc($hfs * 1.5), 3rem);
+            font-family: $hff;
+            padding: 0.5rem 1rem;
+            color: $bgc;
+        }
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease-in-out;
+        }
+
+        p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-family: $pff;
+            font-size: max(min($pfs, 1.5rem), 1rem);
+            padding: 3%;
+            margin: 2%;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: $pfc;
+            text-align: justify;
+            transform: translateY(100%);
+            transition: transform 0.7s ease-in-out;
+        }
+
+        &:hover {
+            
+            img {
+                filter: grayscale(0%);
+            }
+
+            p {
+                transform: translateY(0);
+            }
+
+        }
+}
+
+

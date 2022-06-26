@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+// font families
+$hff: 'Amatic SC', cursive; // heading font family
+$pff: 'Hubballi', cursive; // paragraph font family
+
+// font sizes
+$hfs: 5vw; // heading font size
+$pfs: 2vw;   // paragraph font size
+
+// font colors
+$hfc: #f5f5f5; // heading font color
+$pfc: #f5f5f5; // paragraph font color
+
+// background colors,
+$bgc: #ACE0FA; // background color
